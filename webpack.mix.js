@@ -1,4 +1,11 @@
-let mix = require('laravel-mix');
+/*
+ |--------------------------------------------------------------------------
+ | Bootstrap Boilerplate Configuration
+ |--------------------------------------------------------------------------
+ */
+
+const public_path = 'dist'; //destination folder for compiled assets
+const proxy_host = 'localhost/bootrap-boilerplate'; //Proxy an existing virtual host. (eg. 'local.dev')
 
 /*
  |--------------------------------------------------------------------------
@@ -15,8 +22,10 @@ let mix = require('laravel-mix');
  |   - Minification on production
  */
 
+let mix = require('laravel-mix');
+
 mix
-    .setPublicPath('dist')
+    .setPublicPath(public_path)
     .setResourceRoot('../')
     .autoload({
         'jquery': [
@@ -26,16 +35,16 @@ mix
             'Popper', 'window.Popper'
         ]
     })
-    .sass('src/assets/scss/app.scss', 'dist/css/')
-    .js('src/assets/js/app.js', 'dist/js/app.js')
+    .sass('src/assets/scss/app.scss', public_path + '/css/')
+    .js('src/assets/js/app.js', public_path + '/js/app.js')
     .extract(['jquery', 'popper.js/dist/umd/popper.js'])
     .sourceMaps()
-    .copyDirectory('src/assets/img', 'dist/img')
+    .copyDirectory('src/assets/img', public_path + '/img')
     .browserSync({
-        proxy: 'localhost/webpack',
+        proxy: proxy_host,
         files: [
             '*.{php|html}',
-            'dist/**/*'
+            public_path + '/**/*'
         ]
     });
 
