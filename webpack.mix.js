@@ -4,7 +4,7 @@
  |--------------------------------------------------------------------------
  */
 
-const public_path = 'dist'; //destination folder for compiled assets
+const public_path = 'dist'; // Destination folder for compiled assets
 const proxy_host = 'localhost/bootstrap-boilerplate'; //Proxy an existing virtual host. (eg. 'local.dev')
 
 
