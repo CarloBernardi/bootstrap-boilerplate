@@ -45,14 +45,14 @@ Mix is a configuration layer on top of Webpack, so to run your Mix tasks you onl
 npm run dev
 ```
 
+#### Watch Assets For Changes and Sync Browser
+```bash
+npm run watch
+```
+
 #### Run all Mix tasks and minify output
 ```bash
 npm run production
-```
-
-#### Watching Assets For Changes and Browser Synchronization
-```bash
-npm run watch
 ```
 
 
