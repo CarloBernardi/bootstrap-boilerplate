@@ -5,7 +5,7 @@
  */
 
 const public_path = 'dist'; //destination folder for compiled assets
-const proxy_host = 'localhost/bootrap-boilerplate'; //Proxy an existing virtual host. (eg. 'local.dev')
+const proxy_host = 'localhost/bootstrap-boilerplate'; //Proxy an existing virtual host. (eg. 'local.dev')
 
 /*
  |--------------------------------------------------------------------------
