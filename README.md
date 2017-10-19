@@ -3,8 +3,7 @@ Bootstrap 4-beta Boilerplate, bundled with **Webpack** and managed by **Laravel 
 
 
 ## Introduction
-**Bootstrap Boilerplate** comes with [Bootstrap 4-beta](https://getbootstrap.com/) framework, [FontAwesome](http://fontawesome.io/) icons pack and makes use of
-[Laravel Mix](https://github.com/JeffreyWay/laravel-mix) for defining basic [Webpack](http://github.com/webpack/webpack) build steps for your application.
+**Bootstrap Boilerplate** comes with [Bootstrap 4-beta](https://getbootstrap.com/) framework, [FontAwesome](http://fontawesome.io/) icons pack and makes use of [Laravel Mix](https://github.com/JeffreyWay/laravel-mix) for defining basic [Webpack](http://github.com/webpack/webpack) build steps for your application.
 
 Bootstrap Boilerplate is **preconfigured to perform these Mix tasks**:
 - Sass compilation with URL rewriting and Autoprefixer PostCSS plugin
@@ -17,19 +16,13 @@ Bootstrap Boilerplate is **preconfigured to perform these Mix tasks**:
 
 ## Requirements
 
-This project requires [Node.js](https://nodejs.org/) to be installed on your machine. Run this command to check if you are ready:
-
-```shell
-$ node -v
-```
-
-(Your Node.js version must be 4.0 or higher)
+This project requires [Node.js](https://nodejs.org/) to be installed on your machine. Prompt <code>node -v</code> on your shell to check if you are ready. (Your Node.js version must be 4.0 or higher)
 
 
 ## Quick Start
-These instructions will get you a copy of Bootstrap **Boilerplate** up and running on your local machine.
+These instructions will get you a copy of **Bootstrap Boilerplate** up and running on your local machine.
 
-### 1. Installation
+### 1. Install
 Clone the repository and install with npm:
 ```shell
 git clone https://github.com/CarloBernardi/bootstrap-boilerplate.git
@@ -37,7 +30,7 @@ cd bootstrap-boilerplate
 npm install
 ```
 
-### 2. Configuration
+### 2. Configure
 Open <code>webpack.mix.js</code> file and edit these constants as you prefer:
 ```javascript
 const public_path = 'dist'; // Destination folder for compiled assets
