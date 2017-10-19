@@ -1,9 +1,9 @@
-# Bootstrap Boilerplate
-**Bootstrap 4-beta**+**FontAwesome** Boilerplate, bundled with **Webpack** and managed by **Laravel Mix**.
+# Bootstrap 4 Boilerplate
+**Bootstrap 4.0** and **FontAwesome 4.7** Boilerplate, bundled with **Webpack** and managed by **Laravel Mix**.
 
 
 ## Introduction
-**Bootstrap Boilerplate** comes with [Bootstrap 4-beta](https://getbootstrap.com/) framework, [FontAwesome](http://fontawesome.io/) icons pack and makes use of [Laravel Mix](https://github.com/JeffreyWay/laravel-mix) for defining basic [Webpack](http://github.com/webpack/webpack) build steps for your application.
+**Bootstrap Boilerplate** comes with [Bootstrap 4.0-beta](https://getbootstrap.com/) framework, [FontAwesome](http://fontawesome.io/) icons pack and makes use of [Laravel Mix](https://github.com/JeffreyWay/laravel-mix) for defining basic [Webpack](http://github.com/webpack/webpack) build steps for your application.
 
 Bootstrap Boilerplate is **preconfigured to perform these Mix tasks**:
 - Sass compilation with URL rewriting and Autoprefixer PostCSS plugin
@@ -16,7 +16,7 @@ Bootstrap Boilerplate is **preconfigured to perform these Mix tasks**:
 
 ## Requirements
 
-This project requires [Node.js](https://nodejs.org/) to be installed on your machine. Prompt <code>node -v</code> on your shell to check if you are ready. (Your Node.js version must be 4.0 or higher)
+This project requires [Node.js](https://nodejs.org/) to be installed on your machine. Run <code>node -v</code> on your shell to check if you are ready. Your Node.js version must be 4.0 or higher.
 
 
 ## Quick Start
