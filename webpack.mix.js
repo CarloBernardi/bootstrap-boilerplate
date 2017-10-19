@@ -26,8 +26,10 @@ const proxy_host = 'localhost/bootstrap-boilerplate'; //Proxy an existing virtua
 let mix = require('laravel-mix');
 
 mix
-    .setPublicPath(public_path)
     .setResourceRoot('../')
+
+    .setPublicPath(public_path)
+
     .autoload({
         'jquery': [
             '$', 'window.$', 'jQuery', 'window.jQuery'
@@ -36,11 +38,21 @@ mix
             'Popper', 'window.Popper'
         ]
     })
-    .sass('src/assets/scss/app.scss', public_path + '/css/')
-    .js('src/assets/js/app.js', public_path + '/js/app.js')
-    .extract(['jquery', 'popper.js/dist/umd/popper.js'])
-    .sourceMaps()
+
     .copyDirectory('src/assets/img', public_path + '/img')
+
+    .sass('src/assets/scss/app.scss', 'css/app.css')
+    // .sass('src/assets/scss/another.scss', 'css/another.css')
+    // .sass('src/assets/scss/**/*', 'css/all.css')
+
+    .js('src/assets/js/app.js', 'js/app.js')
+    // .js('src/assets/js/another.js', 'js/another.js')
+    // .js('src/assets/js/**/*', 'js/all.js')
+
+    .extract(['jquery', 'popper.js/dist/umd/popper.js'])
+
+    .sourceMaps()
+
     .browserSync({
         proxy: proxy_host,
         files: [
