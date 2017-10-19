@@ -1,5 +1,5 @@
 # Bootstrap Boilerplate
-Bootstrap 4-beta Boilerplate, bundled with **Webpack** and managed by **Laravel Mix**.
+Bootstrap 4-beta Boilerplate, bundled with Webpack and managed by Laravel Mix.
 
 
 ## Introduction
