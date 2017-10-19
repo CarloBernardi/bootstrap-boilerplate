@@ -45,7 +45,7 @@ Mix is a configuration layer on top of Webpack, so to run your Mix tasks you onl
 npm run dev
 ```
 
-#### Watch Assets For Changes and Sync Browser
+#### Watch assets for changes and Sync browser
 ```bash
 npm run watch
 ```
