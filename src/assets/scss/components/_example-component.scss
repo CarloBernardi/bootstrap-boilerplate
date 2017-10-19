@@ -1,0 +1,65 @@
+/*
+ * Custom button, following BEM methodology
+ *
+ */
+
+// Block
+.customBtn {
+  text-decoration: none;
+  background-color: white;
+  color: #888;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 5px;
+}
+
+// Element
+.customBtn__price {
+  color: #fff;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: -10px; /* realign button text padding */
+  font-weight: 600;
+  background-color: #333;
+  opacity: .4;
+  border-radius: 5px 0 0 5px;
+}
+
+// Element
+.customBtn__text {
+  padding: 0 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+
+// Modifier
+.customBtn--big {
+  font-size: 28px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+// Modifier
+.customBtn--blue {
+  border-color: #0074D9;
+  color: white;
+  background-color: #0074D9;
+}
+
+/* Modifier */
+.customBtn--orange {
+  border-color: #FF4136;
+  color: white;
+  background-color: #FF4136;
+}
+
+/* Modifier */
+.customBtn--green {
+  border-color: #3D9970;
+  color: white;
+  background-color: #3D9970;
+}
