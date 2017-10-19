@@ -1,5 +1,5 @@
 # Bootstrap Boilerplate
-Bootstrap 4-beta Boilerplate, bundled with Webpack and managed by Laravel Mix.
+**Bootstrap 4-beta**+**FontAwesome** Boilerplate, bundled with **Webpack** and managed by **Laravel Mix**.
 
 
 ## Introduction
@@ -39,6 +39,7 @@ const proxy_host = 'localhost/bootrap-boilerplate'; // Proxy an existing virtual
 
 ### 3. Get Started
 Mix is a configuration layer on top of Webpack, so to run your Mix tasks you only need to execute one of the NPM scripts that is included with the default package.json file.
+
 #### Run all Mix tasks
 ```bash
 npm run dev
@@ -54,9 +55,11 @@ npm run production
 npm run watch
 ```
 
+
 ## Documentation
 - [Laravel Mix API](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme)
 - [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
