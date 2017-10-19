@@ -3,7 +3,8 @@ Bootstrap 4-beta Boilerplate, bundled with **Webpack** and managed by **Laravel 
 
 
 ## Introduction
-[Laravel Mix](https://github.com/JeffreyWay/laravel-mix) provides a clean, fluent API for defining basic [Webpack](http://github.com/webpack/webpack) build steps for your Laravel application. Mix supports several common CSS and JavaScript pre-processors.
+Bootstrap Boilerplate comes with [Bootstrap 4-beta](https://getbootstrap.com/) framework, [FontAwesome](http://fontawesome.io/) icons pack and makes use of
+[Laravel Mix](https://github.com/JeffreyWay/laravel-mix), a configuration layer that provides a clean, fluent API for defining basic [Webpack](http://github.com/webpack/webpack) build steps for your application.
 
 **Bootstrap Boilerplate is preconfigured to perform these Mix tasks:**
 - Sass compilation with URL rewriting and Autoprefixer PostCSS plugin
@@ -45,8 +46,8 @@ npm install
 ### 2. Configuration
 Open <code>webpack.mix.js</code> file and edit these constants as you prefer:
 ```javascript
-const public_path = 'dist'; //destination folder for compiled assets
-const proxy_host = 'localhost/bootrap-boilerplate'; //Proxy an existing virtual host. (eg. 'local.dev')
+const public_path = 'dist'; // Destination folder for compiled assets
+const proxy_host = 'localhost/bootrap-boilerplate'; // Proxy an existing virtual host. (eg. 'local.dev')
 ```
 
 ### 3. Get Started
@@ -61,7 +62,7 @@ npm run dev
 npm run production
 ```
 
-#### Watching Assets For Changes
+#### Watching Assets For Changes and Browser Synchronization
 ```bash
 npm run watch
 ```
