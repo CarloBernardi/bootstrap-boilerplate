@@ -7,6 +7,7 @@
 const public_path = 'dist'; //destination folder for compiled assets
 const proxy_host = 'localhost/bootstrap-boilerplate'; //Proxy an existing virtual host. (eg. 'local.dev')
 
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -49,7 +50,11 @@ mix
     });
 
 
-// Full API
+/*
+ |--------------------------------------------------------------------------
+ | Full Laravel Mix API
+ |--------------------------------------------------------------------------
+ */
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
 // mix.ts(src, output); <-- Requires tsconfig.json to exist in the same folder as webpack.mix.js

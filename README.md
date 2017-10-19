@@ -45,7 +45,7 @@ Mix is a configuration layer on top of Webpack, so to run your Mix tasks you onl
 npm run dev
 ```
 
-#### Run all Mix tasks and minify output:
+#### Run all Mix tasks and minify output
 ```bash
 npm run production
 ```
