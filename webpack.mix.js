@@ -1,34 +1,29 @@
-/*
- |--------------------------------------------------------------------------
- | Bootstrap Boilerplate Configuration
- |--------------------------------------------------------------------------
- */
-
-const public_path = 'dist'; // Destination folder for compiled assets
-const proxy_host = 'localhost/bootstrap-boilerplate'; //Proxy an existing virtual host. (eg. 'local.dev')
-
-
-/*
- |--------------------------------------------------------------------------
- | Mix Asset Management
- |--------------------------------------------------------------------------
- |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for application. By default will execute these tasks:
- |   - Sass compilation with URL rewriting and Autoprefixer PostCSS plugin
- |   - JavaScript bundling with ES5 code compilation
- |   - Vendor libraries extraction, for improved long-term caching
- |   - In-file source maps generation
- |   - Browser synchronization on changes
- |   - Minification on production
- */
-
 let mix = require('laravel-mix');
+
+/*
+ * -----------------------------------
+ * Bootstrap Boilerplate Configuration
+ * -----------------------------------
+ */
+
+// Path to dist folder
+const DIST = 'dist';
+
+// Proxy an existing virtual host (eg: 'boilerplate.dev', 'localhost/bootstrap-boilerplate').
+// If null, use the built-in static server.
+const PROXY = null;
+
+
+/*
+ * --------------------
+ * Mix Asset Management
+ * --------------------
+ */
 
 mix
     .setResourceRoot('../')
 
-    .setPublicPath(public_path)
+    .setPublicPath(DIST)
 
     .autoload({
         'jquery': [
@@ -39,7 +34,7 @@ mix
         ]
     })
 
-    .copyDirectory('src/assets/img', public_path + '/img')
+    .copyDirectory('src/assets/img', DIST + '/img')
 
     .sass('src/assets/scss/app.scss', 'css/app.css')
     // .sass('src/assets/scss/another.scss', 'css/another.css')
@@ -54,19 +49,21 @@ mix
     .sourceMaps()
 
     .browserSync({
-        proxy: proxy_host,
+        server: PROXY === null,
+        proxy: PROXY,
         files: [
             '*.{php|html}',
-            public_path + '/**/*'
+            DIST + '/**/*'
         ]
     });
 
 
 /*
- |--------------------------------------------------------------------------
- | Full Laravel Mix API
- |--------------------------------------------------------------------------
+ * --------------------
+ * Full Laravel Mix API
+ * --------------------
  */
+
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
 // mix.ts(src, output); <-- Requires tsconfig.json to exist in the same folder as webpack.mix.js

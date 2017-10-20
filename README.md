@@ -33,8 +33,12 @@ npm install
 ### 2. Configure
 Open <code>webpack.mix.js</code> file and edit these constants as you prefer:
 ```javascript
-const public_path = 'dist'; // Destination folder for compiled assets
-const proxy_host = 'localhost/bootrap-boilerplate'; // Proxy an existing virtual host. (eg. 'local.dev')
+// Path to dist folder
+const DIST = 'dist';
+
+// Proxy an existing virtual host (eg: 'boilerplate.dev', 'localhost/bootstrap-boilerplate').
+// If null, use the built-in static server.
+const PROXY = null;
 ```
 
 ### 3. Get Started
